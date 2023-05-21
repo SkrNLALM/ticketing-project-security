@@ -17,11 +17,13 @@ public class TicketingProjectOrmApplication {
 
 	@Bean
 	public ModelMapper mapper(){
+
 		return new ModelMapper();
 	}
-
+//It is added because it did not build by us, so @BEan needed
 	@Bean
 	public PasswordEncoder passwordEncoder(){
+
 		return new BCryptPasswordEncoder();
 	}
 

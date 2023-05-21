@@ -14,6 +14,7 @@ public class UserPrincipal implements UserDetails {
     private User user;
 
     public UserPrincipal(User user) {
+
         this.user = user;
     }
 
@@ -43,16 +44,19 @@ public class UserPrincipal implements UserDetails {
 
     @Override
     public boolean isAccountNonExpired() {
+
         return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
+
         return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
+
         return true;
     }
 
